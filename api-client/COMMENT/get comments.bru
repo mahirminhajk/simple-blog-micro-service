@@ -1,0 +1,25 @@
+meta {
+  name: get comments
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:4001/posts/:id/comments
+  body: none
+  auth: none
+}
+
+params:path {
+  id: 28c3b97e
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "title": "Hello World this my first post"
+  }
+}
