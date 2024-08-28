@@ -74,12 +74,12 @@ Each service is built using **Node.js** and **Express**, and they communicate vi
    ```
 
 ## Usage
-    1. Client: The React client allows users to create posts and leave comments. The UI interacts with the different microservices via HTTP.
-    2. Posts Service: Manages post creation and fetching of posts.
-    3. Comments Service: Responsible for adding comments to posts.
-    4. Event-Bus: Receives and distributes events across the services. For example, when a post is created, the event-bus will notify the query service to update its aggregated data.
-    5. Moderation Service: Filters out inappropriate comments before they are posted to the blog.
-    6. Query Service: Aggregates data from the other services to serve combined responses to the client.
+   1. Client: The React client allows users to create posts and leave comments. The UI interacts with the different microservices via HTTP.
+   2. Posts Service: Manages post creation and fetching of posts.
+   3. Comments Service: Responsible for adding comments to posts.
+   4. Event-Bus: Receives and distributes events across the services. For example, when a post is created, the event-bus will notify the query service to update its aggregated data.
+   5. Moderation Service: Filters out inappropriate comments before they are posted to the blog.
+   6. Query Service: Aggregates data from the other services to serve combined responses to the client.
 
 ## Tech Stack
 
