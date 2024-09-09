@@ -14,17 +14,16 @@ spec:
     spec:
       containers:
         - name: event-bus
-          image: mahirminhajk/event-bus
+          image: rallycoding/event-bus-89
 ---
 apiVersion: v1
 kind: Service
 metadata:
   name: event-bus-srv
 spec:
-  type: ClusterIP # default value
   selector:
     app: event-bus
-  ports: 
+  ports:
     - name: event-bus
       protocol: TCP
       port: 4005
