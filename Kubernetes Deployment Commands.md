@@ -10,8 +10,12 @@ kubectl get deployments
 ```warp-runnable-command
 kubectl delete deployment {{deployment_name}}
 ```
-### Describe pod
+### Describe deployment
 To get more information of the pod for debuggin
 ```warp-runnable-command
 kubectl describe deployment {{deployment_name}}
+```
+### Restart \(rollout\)
+```warp-runnable-command
+kubectl rollout restart deployment {{deployment_name}}
 ```

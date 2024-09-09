@@ -3,6 +3,10 @@
 ```warp-runnable-command
 sudo docker build -t mahirminhajk/{{name}} .
 ```
+### Push Docker to hub
+```warp-runnable-command
+docker push mahirminhajk/{{image_name}}:{{tag}}
+```
 ### RUN DOCKER 
 
 ```warp-runnable-command
